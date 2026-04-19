@@ -1,0 +1,109 @@
+body {
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial;
+}
+
+.calculator {
+    position: relative;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 260px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Display */
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    background: #fafafa;
+    border-radius: 10px;
+}
+
+/* Toggle */
+.toggle {
+    position: absolute;
+    right: -50px;
+    top: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+}
+
+/* Buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background: #f0f0f0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e0e0e0;
+}
+
+.operator {
+    color: #ff5722;
+    font-weight: bold;
+}
+
+.clear {
+    background: #ff5252;
+    color: white;
+}
+
+.equals {
+    background: #4caf50;
+    color: white;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+/* Side Panel */
+.side-panel {
+    position: absolute;
+    right: -160px;
+    top: 0;
+    width: 140px;
+    height: 100%;
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    display: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.side-panel button {
+    width: 100%;
+    margin: 5px 0;
+}
